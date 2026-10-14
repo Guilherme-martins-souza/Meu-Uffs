@@ -41,7 +41,7 @@ O levantamento mostra que fatores cotidianos e logísticos estão entre os princ
 
 ## 3. Escopo funcional
 
-O sistema se divide em quatro módulos.
+O sistema se divide em cinco módulos.
 
 ### Módulo 1 — Guia dinâmico de fluxo curricular e "macetes" regimentais
 
@@ -69,6 +69,16 @@ Cada professor adota critérios diferentes (pesos, listas, trabalhos, substituti
 - **Horários e serviços essenciais:** linhas de ônibus que atendem o campus, funcionamento e cardápio do RU, horários da biblioteca e contatos úteis.
 - **Mural de dicas de veteranos:** orientações curadas sobre o curso, grupos de estudo, laboratórios de pesquisa, monitorias e editais de auxílio estudantil.
 
+### Módulo 5 — Biblioteca de recomendações de estudo por disciplina
+
+Para cada disciplina do curso, uma página com materiais complementares curados, para o calouro não gastar tempo procurando por conta própria.
+
+- **Tipos de material:** cursos gratuitos, videoaulas e canais do YouTube, livros e apostilas abertas, plataformas de exercícios e ferramentas práticas.
+- **Organização por disciplina:** integrada ao mapa da grade curricular (Módulo 1). Ao abrir uma matéria, o aluno vê também os materiais recomendados.
+- **Metadados de cada recomendação:** tipo, idioma, nível (iniciante/intermediário), duração aproximada e gratuidade.
+- **Curadoria colaborativa:** veteranos e professores sugerem materiais, e os alunos votam ou avaliam a utilidade. Isso mantém a lista atualizada e filtra links ruins ou desatualizados.
+- **Foco no início do curso:** prioridade às disciplinas do 1º ano, onde está o pico de evasão.
+
 ## 4. Matriz resumo de requisitos (Sprint 1)
 
 | Código | Categoria | Descrição | Prioridade (MVP) |
@@ -79,5 +89,6 @@ Cada professor adota critérios diferentes (pesos, listas, trabalhos, substituti
 | RF04 | Predição de Nota | Calcular automaticamente a nota restante necessária nas avaliações futuras com base apenas nas notas parciais inseridas pelo aluno. | Alta |
 | RF05 | Agenda de Provas | Permitir o cadastro individual e o compartilhamento coletivo (aluno/professor) de datas de provas e entregas de trabalhos. | Média |
 | RF06 | Utilidades do Campus | Disponibilizar módulo informativo com mapa dos blocos/laboratórios, horários de ônibus, funcionamento do RU e guia de bolsas/ACCs. | Média |
+| RF07 | Recomendações de Estudo | Exibir, para cada disciplina, materiais complementares gratuitos (cursos, vídeos, livros abertos) com possibilidade de sugestão e avaliação pela comunidade. | Média |
 | RNF01 | Usabilidade | Interface responsiva (Mobile-First), garantindo consulta rápida pelo celular nos corredores ou no ônibus. | Alta |
 | RNF02 | Simplicidade | Operar de forma independente de integrações burocráticas complexas no MVP, priorizando agilidade de cadastro pelo próprio estudante. | Alta |
