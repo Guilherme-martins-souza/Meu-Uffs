@@ -2,8 +2,7 @@
 *.tmp
 
 # arquivos só locais por enquanto
-docs/design/wireframes/
-docs/design/telas/
+docs/design/wireframes/wireframes.html
 docs/design/meu-uffs-1b-institucional-claro.html
 docs/sprint-1/gerar_docx.py
 docs/sprint-1/relatorio.md
