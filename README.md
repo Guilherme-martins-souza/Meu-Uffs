@@ -10,6 +10,34 @@ Plataforma web de gestão individual e afiliação estudantil para ingressantes.
 
 Este README reúne as mesmas seções do relatório da Sprint 1.
 
+## Como rodar
+
+O projeto é composto por páginas HTML estáticas estilizadas com [Tailwind CSS](https://tailwindcss.com).
+
+### Pré-requisitos
+
+- [Node.js](https://nodejs.org) 18 ou superior (já inclui o `npm`)
+
+### Passo a passo
+
+```bash
+git clone <url-do-repositorio>
+cd Meu-Uffs
+npm install      # instala o Tailwind CSS
+npm run dev      # gera o src/output.css e recompila a cada alteração
+```
+
+Com o `npm run dev` rodando, abra `src/pages/inicio.html` no navegador. Você pode abrir o arquivo direto ou usar a extensão **Live Server** do VS Code, que recarrega a página sozinha.
+
+### Scripts disponíveis
+
+| Comando         | O que faz                                                         |
+| --------------- | ----------------------------------------------------------------- |
+| `npm run dev`   | Compila o CSS e fica observando alterações (modo desenvolvimento) |
+| `npm run build` | Compila o CSS uma única vez                                       |
+
+> O arquivo `src/output.css` já vem versionado. Para apenas visualizar as páginas, basta abrir os HTML no navegador, sem instalar nada. O Node.js só é necessário para quem for alterar as classes do Tailwind.
+
 ## 1. Identificação
 
 - **Título do projeto:** Meu UFFS: plataforma web de gestão individual e afiliação estudantil para ingressantes
