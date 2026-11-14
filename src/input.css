@@ -1,1 +1,17 @@
-@import "tailwindcss"
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Montserrat:wght@400;500;600;700&display=swap");
+@import "tailwindcss";
+
+/* Identidade visual do Meu UFFS (docs/design) */
+@theme {
+  --color-uffs: #00693E;
+  --color-uffs-claro: #1B9E4B;
+  --color-uffs-borda: #4F9B73;
+  --color-uffs-suave: #BFE3CC;
+  --color-fundo: #F4F6F3;
+  --color-texto: #13221A;
+  --color-texto-suave: #5B6B62;
+  --color-linha: #D7DFD9;
+
+  --font-sans: "Montserrat", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+}
