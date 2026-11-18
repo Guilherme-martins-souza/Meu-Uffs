@@ -8,12 +8,87 @@
 </head>
 <body class="min-h-screen bg-fundo font-sans text-texto">
     <header class="bg-uffs px-5 pt-8 pb-5 text-white">
-        <p class="text-xs font-medium tracking-widest text-uffs-suave uppercase">Campus Chapecó</p>
-        <h1 class="text-[26px] font-bold">Campus</h1>
+        <div class="mx-auto max-w-5xl">
+            <p class="text-xs font-medium tracking-widest text-uffs-suave uppercase">Campus Chapecó</p>
+            <h1 class="text-[26px] font-bold">Campus</h1>
+            <nav class="mt-4 flex flex-wrap gap-2">
+                <button type="button" class="aba-btn cursor-pointer rounded-full bg-white px-4 py-1.5 text-xs font-bold text-uffs">Ônibus</button>
+                <button type="button"  class="aba-btn cursor-pointer rounded-full border border-uffs-borda px-4 py-1.5 text-xs font-medium text-uffs-suave">RU</button>
+                <button type="button" class="aba-btn cursor-pointer rounded-full border border-uffs-borda px-4 py-1.5 text-xs font-medium text-uffs-suave">Serviços</button>
+            </nav>
+        </div>
     </header>
 
     <main class="px-5 pt-5 pb-24">
-        <p class="text-center text-texto-suave">Tela Campus em construção.</p>
+        <div class="mx-auto max-w-5xl">
+            <section id="onibus" class="aba-conteudo grid grid-cols-1 gap-4 md:grid-cols-2">
+                <div class="rounded-lg border border-linha bg-white p-5">
+                    <div class="flex items-center justify-between">
+                        <h2 class="text-base font-bold text-texto">Próximos ônibus</h2>
+                        <span class="font-mono text-xs text-uffs">Dias úteis</span>
+                    </div>
+
+                    <ul class="mt-3 divide-y divide-linha text-sm">
+                        <li class="flex items-center justify-between py-3">
+                            <div class="flex items-center gap-3">
+                                <span class="font-mono font-bold text-texto">12:15</span>
+                                <span class="text-xs text-texto-suave">Campus → Centro</span>
+                            </div>
+                            <span class="font-mono text-xs font-medium text-uffs">em 18 min</span>
+                        </li>
+                        <li class="flex items-center justify-between py-3">
+                            <div class="flex items-center gap-3">
+                                <span class="font-mono font-bold text-texto">12:40</span>
+                                <span class="text-xs text-texto-suave">Campus → Rodoviária</span>
+                            </div>
+                            <span class="font-mono text-xs text-texto-suave">em 43 min</span>
+                        </li>
+                        <li class="flex items-center justify-between py-3">
+                            <div class="flex items-center gap-3">
+                                <span class="font-mono font-bold text-texto">13:10</span>
+                                <span class="text-xs text-texto-suave">Centro → Campus</span>
+                            </div>
+                            <span class="font-mono text-xs text-texto-suave">em 1h13</span>
+                        </li>
+                        <li class="flex items-center justify-between pt-3">
+                            <div class="flex items-center gap-3">
+                                <span class="font-mono font-bold text-texto">13:45</span>
+                                <span class="text-xs text-texto-suave">Efapi → Campus</span>
+                            </div>
+                            <span class="font-mono text-xs text-texto-suave">em 1h48</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="space-y-4">
+                    <div class="rounded-lg bg-uffs p-5 text-white">
+                        <div class="flex items-center justify-between font-mono text-[11px] text-uffs-suave">
+                            <span class="uppercase">RU · Almoço hoje</span>
+                            <span>11:00–13:30</span>
+                        </div>
+                        <p class="mt-2.5 text-sm font-medium leading-relaxed">Arroz, feijão, frango assado, salada de repolho e laranja.</p>
+                        <p class="mt-2 font-mono text-xs text-uffs-suave">opção vegetariana: grão-de-bico ao curry</p>
+                    </div>
+
+                    <div class="rounded-lg border border-linha bg-white p-5">
+                        <h2 class="text-sm font-bold text-texto">Linhas que atendem o campus</h2>
+                        <ul class="mt-3 space-y-2 text-xs text-texto-suave">
+                            <li><strong class="font-mono text-texto">Linha 24</strong> · Universidade Federal (via Terminal Urbano)</li>
+                            <li><strong class="font-mono text-texto">Linha 07</strong> · Efapi / UFFS (horários de pico)</li>
+                            <li><strong class="font-mono text-texto">Ponto principal</strong> · em frente ao Bloco A</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section id="ru" class="aba-conteudo hidden grid-cols-1 gap-4 md:grid-cols-2">
+                
+            </section>
+
+            <section id="servicos" class="aba-conteudo hidden grid-cols-1 gap-3.5 sm:grid-cols-2 md:grid-cols-3">
+                
+            </section>
+        </div>
     </main>
 
     <footer class="fixed inset-x-0 bottom-0 grid h-18 grid-cols-5 items-center border-t border-linha bg-white text-center text-xs font-medium text-texto-suave">
@@ -23,5 +98,6 @@
         <a href="agenda.html">Agenda</a>
         <a href="campus.html" class="font-bold text-uffs">Campus</a>
     </footer>
+    
 </body>
 </html>
