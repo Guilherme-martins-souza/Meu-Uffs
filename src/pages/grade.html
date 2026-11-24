@@ -8,12 +8,287 @@
 </head>
 <body class="min-h-screen bg-fundo font-sans text-texto">
     <header class="bg-uffs px-5 pt-8 pb-5 text-white">
-        <p class="text-xs font-medium tracking-widest text-uffs-suave uppercase">Ciência da Computação · Chapecó</p>
-        <h1 class="text-[26px] font-bold">Grade curricular</h1>
+        <div class="mx-auto max-w-5xl">
+            <p class="text-xs font-medium tracking-widest text-uffs-suave uppercase">Ciência da Computação · Chapecó</p>
+            <h1 class="text-[26px] font-bold">Grade curricular</h1>
+            <nav class="mt-4 flex flex-wrap gap-2">
+                <button type="button" onclick="mostrarAba('fase-1', this)" class="aba-btn cursor-pointer rounded-full bg-white px-4 py-1.5 text-xs font-bold text-uffs">1ª fase</button>
+                <button type="button" onclick="mostrarAba('fase-2', this)" class="aba-btn cursor-pointer rounded-full border border-uffs-borda px-4 py-1.5 text-xs font-medium text-uffs-suave">2ª fase</button>
+                <button type="button" onclick="mostrarAba('fase-3', this)" class="aba-btn cursor-pointer rounded-full border border-uffs-borda px-4 py-1.5 text-xs font-medium text-uffs-suave">3ª fase</button>
+                <button type="button" onclick="mostrarAba('fase-4', this)" class="aba-btn cursor-pointer rounded-full border border-uffs-borda px-4 py-1.5 text-xs font-medium text-uffs-suave">4ª fase</button>
+            </nav>
+        </div>
     </header>
 
     <main class="px-5 pt-5 pb-24">
-        <p class="text-center text-texto-suave">Tela Grade em construção.</p>
+        <div class="mx-auto max-w-5xl space-y-5">
+            <div class="flex flex-wrap items-center justify-between gap-3">
+                <div class="flex items-center gap-4 text-xs text-texto-suave">
+                    <span class="flex items-center gap-1.5">
+                        <span class="h-2.5 w-2.5 rounded-xs bg-uffs"></span>
+                        tranca outra
+                    </span>
+                    <span class="flex items-center gap-1.5">
+                        <span class="h-2.5 w-2.5 rounded-xs border border-linha bg-white"></span>
+                        livre
+                    </span>
+                </div>
+            </div>
+
+            <section id="fase-1" class="aba-conteudo grid grid-cols-1 gap-3.5 md:grid-cols-2">
+                <a href="disciplina.html" class="block rounded-lg border border-linha bg-white p-4 hover:border-uffs">
+                    <div class="flex items-start justify-between gap-3">
+                        <div>
+                            <p class="font-mono text-[11px] text-texto-suave">GEX208 · 4 créditos</p>
+                            <h2 class="mt-0.5 text-base font-bold text-texto">Cálculo I</h2>
+                        </div>
+                        <span class="shrink-0 rounded-full bg-uffs px-3 py-1 font-mono text-[10px] font-medium tracking-wider text-white uppercase">Tranca 2</span>
+                    </div>
+                    <div class="mt-3 space-y-1 border-t border-linha pt-2.5 text-xs text-texto-suave">
+                        <p>→ Cálculo II (2ª fase)</p>
+                        <p>→ Física I (2ª fase)</p>
+                    </div>
+                </a>
+
+                <a href="disciplina.html" class="block rounded-lg border border-linha bg-white p-4 hover:border-uffs">
+                    <div class="flex items-start justify-between gap-3">
+                        <div>
+                            <p class="font-mono text-[11px] text-texto-suave">GEX604 · 4 créditos</p>
+                            <h2 class="mt-0.5 text-base font-bold text-texto">Algoritmos e Programação</h2>
+                        </div>
+                        <span class="shrink-0 rounded-full bg-uffs px-3 py-1 font-mono text-[10px] font-medium tracking-wider text-white uppercase">Tranca 3</span>
+                    </div>
+                    <div class="mt-3 space-y-1 border-t border-linha pt-2.5 text-xs text-texto-suave">
+                        <p>→ Estruturas de Dados I (2ª fase)</p>
+                        <p>→ Programação I (2ª fase)</p>
+                        <p>→ Sistemas Digitais (2ª fase)</p>
+                    </div>
+                </a>
+
+                <a href="disciplina.html" class="block rounded-lg border border-linha bg-white p-4 hover:border-uffs">
+                    <div class="flex items-start justify-between gap-3">
+                        <div>
+                            <p class="font-mono text-[11px] text-texto-suave">GEX209 · 4 créditos</p>
+                            <h2 class="mt-0.5 text-base font-bold text-texto">Geometria Analítica</h2>
+                        </div>
+                        <span class="shrink-0 rounded-full bg-uffs px-3 py-1 font-mono text-[10px] font-medium tracking-wider text-white uppercase">Tranca 1</span>
+                    </div>
+                    <div class="mt-3 space-y-1 border-t border-linha pt-2.5 text-xs text-texto-suave">
+                        <p>→ Álgebra Linear (2ª fase)</p>
+                    </div>
+                </a>
+
+                <a href="disciplina.html" class="block rounded-lg border border-linha bg-white p-4 hover:border-uffs">
+                    <div class="flex items-start justify-between gap-3">
+                        <div>
+                            <p class="font-mono text-[11px] text-texto-suave">GEX605 · 4 créditos</p>
+                            <h2 class="mt-0.5 text-base font-bold text-texto">Introdução à Computação</h2>
+                        </div>
+                        <span class="shrink-0 rounded-full border border-linha px-3 py-1 font-mono text-[10px] font-medium tracking-wider text-texto-suave uppercase">Livre</span>
+                    </div>
+                    <p class="mt-3 border-t border-linha pt-2.5 text-xs text-texto-suave">Não é pré-requisito direto na 2ª fase.</p>
+                </a>
+
+                <a href="disciplina.html" class="block rounded-lg border border-linha bg-white p-4 hover:border-uffs">
+                    <div class="flex items-start justify-between gap-3">
+                        <div>
+                            <p class="font-mono text-[11px] text-texto-suave">GCH292 · 4 créditos</p>
+                            <h2 class="mt-0.5 text-base font-bold text-texto">Hist. da Fronteira Sul</h2>
+                        </div>
+                        <span class="shrink-0 rounded-full border border-linha px-3 py-1 font-mono text-[10px] font-medium tracking-wider text-texto-suave uppercase">Livre</span>
+                    </div>
+                    <p class="mt-3 border-t border-linha pt-2.5 text-xs text-texto-suave">Domínio comum · não tranca disciplinas.</p>
+                </a>
+
+                <a href="disciplina.html" class="block rounded-lg border border-linha bg-white p-4 hover:border-uffs">
+                    <div class="flex items-start justify-between gap-3">
+                        <div>
+                            <p class="font-mono text-[11px] text-texto-suave">GLA104 · 4 créditos</p>
+                            <h2 class="mt-0.5 text-base font-bold text-texto">Produção Textual Acadêmica</h2>
+                        </div>
+                        <span class="shrink-0 rounded-full border border-linha px-3 py-1 font-mono text-[10px] font-medium tracking-wider text-texto-suave uppercase">Livre</span>
+                    </div>
+                    <p class="mt-3 border-t border-linha pt-2.5 text-xs text-texto-suave">Domínio comum · não tranca disciplinas.</p>
+                </a>
+            </section>
+
+            <section id="fase-2" class="aba-conteudo hidden grid-cols-1 gap-3.5 md:grid-cols-2">
+                <a href="disciplina.html" class="block rounded-lg border border-linha bg-white p-4 hover:border-uffs">
+                    <div class="flex items-start justify-between gap-3">
+                        <div>
+                            <p class="font-mono text-[11px] text-texto-suave">GEX606 · 4 créditos</p>
+                            <h2 class="mt-0.5 text-base font-bold text-texto">Estruturas de Dados I</h2>
+                        </div>
+                        <span class="shrink-0 rounded-full bg-uffs px-3 py-1 font-mono text-[10px] font-medium tracking-wider text-white uppercase">Tranca 2</span>
+                    </div>
+                    <div class="mt-3 space-y-1 border-t border-linha pt-2.5 text-xs text-texto-suave">
+                        <p>→ Estruturas de Dados II (3ª fase)</p>
+                        <p>→ Grafos (4ª fase)</p>
+                    </div>
+                </a>
+
+                <a href="disciplina.html" class="block rounded-lg border border-linha bg-white p-4 hover:border-uffs">
+                    <div class="flex items-start justify-between gap-3">
+                        <div>
+                            <p class="font-mono text-[11px] text-texto-suave">GEX607 · 4 créditos</p>
+                            <h2 class="mt-0.5 text-base font-bold text-texto">Programação I</h2>
+                        </div>
+                        <span class="shrink-0 rounded-full bg-uffs px-3 py-1 font-mono text-[10px] font-medium tracking-wider text-white uppercase">Tranca 2</span>
+                    </div>
+                    <div class="mt-3 space-y-1 border-t border-linha pt-2.5 text-xs text-texto-suave">
+                        <p>→ Programação II (3ª fase)</p>
+                        <p>→ Engenharia de Software I (4ª fase)</p>
+                    </div>
+                </a>
+
+                <a href="disciplina.html" class="block rounded-lg border border-linha bg-white p-4 hover:border-uffs">
+                    <div class="flex items-start justify-between gap-3">
+                        <div>
+                            <p class="font-mono text-[11px] text-texto-suave">GEX210 · 4 créditos</p>
+                            <h2 class="mt-0.5 text-base font-bold text-texto">Cálculo II</h2>
+                        </div>
+                        <span class="shrink-0 rounded-full bg-uffs px-3 py-1 font-mono text-[10px] font-medium tracking-wider text-white uppercase">Tranca 1</span>
+                    </div>
+                    <div class="mt-3 space-y-1 border-t border-linha pt-2.5 text-xs text-texto-suave">
+                        <p>→ Cálculo Numérico (4ª fase)</p>
+                    </div>
+                </a>
+
+                <a href="disciplina.html" class="block rounded-lg border border-linha bg-white p-4 hover:border-uffs">
+                    <div class="flex items-start justify-between gap-3">
+                        <div>
+                            <p class="font-mono text-[11px] text-texto-suave">GEX608 · 4 créditos</p>
+                            <h2 class="mt-0.5 text-base font-bold text-texto">Sistemas Digitais</h2>
+                        </div>
+                        <span class="shrink-0 rounded-full bg-uffs px-3 py-1 font-mono text-[10px] font-medium tracking-wider text-white uppercase">Tranca 1</span>
+                    </div>
+                    <div class="mt-3 space-y-1 border-t border-linha pt-2.5 text-xs text-texto-suave">
+                        <p>→ Organização de Computadores (3ª fase)</p>
+                    </div>
+                </a>
+
+                <a href="disciplina.html" class="block rounded-lg border border-linha bg-white p-4 hover:border-uffs">
+                    <div class="flex items-start justify-between gap-3">
+                        <div>
+                            <p class="font-mono text-[11px] text-texto-suave">GEX211 · 4 créditos</p>
+                            <h2 class="mt-0.5 text-base font-bold text-texto">Álgebra Linear</h2>
+                        </div>
+                        <span class="shrink-0 rounded-full border border-linha px-3 py-1 font-mono text-[10px] font-medium tracking-wider text-texto-suave uppercase">Livre</span>
+                    </div>
+                    <p class="mt-3 border-t border-linha pt-2.5 text-xs text-texto-suave">Requisito: Geometria Analítica (1ª fase).</p>
+                </a>
+            </section>
+
+            <section id="fase-3" class="aba-conteudo hidden grid-cols-1 gap-3.5 md:grid-cols-2">
+                <a href="disciplina.html" class="block rounded-lg border border-linha bg-white p-4 hover:border-uffs">
+                    <div class="flex items-start justify-between gap-3">
+                        <div>
+                            <p class="font-mono text-[11px] text-texto-suave">GEX609 · 4 créditos</p>
+                            <h2 class="mt-0.5 text-base font-bold text-texto">Estruturas de Dados II</h2>
+                        </div>
+                        <span class="shrink-0 rounded-full bg-uffs px-3 py-1 font-mono text-[10px] font-medium tracking-wider text-white uppercase">Tranca 1</span>
+                    </div>
+                    <div class="mt-3 space-y-1 border-t border-linha pt-2.5 text-xs text-texto-suave">
+                        <p>→ Banco de Dados I (4ª fase)</p>
+                    </div>
+                </a>
+
+                <a href="disciplina.html" class="block rounded-lg border border-linha bg-white p-4 hover:border-uffs">
+                    <div class="flex items-start justify-between gap-3">
+                        <div>
+                            <p class="font-mono text-[11px] text-texto-suave">GEX610 · 4 créditos</p>
+                            <h2 class="mt-0.5 text-base font-bold text-texto">Programação II</h2>
+                        </div>
+                        <span class="shrink-0 rounded-full border border-linha px-3 py-1 font-mono text-[10px] font-medium tracking-wider text-texto-suave uppercase">Livre</span>
+                    </div>
+                    <p class="mt-3 border-t border-linha pt-2.5 text-xs text-texto-suave">Requisito: Programação I (2ª fase).</p>
+                </a>
+
+                <a href="disciplina.html" class="block rounded-lg border border-linha bg-white p-4 hover:border-uffs">
+                    <div class="flex items-start justify-between gap-3">
+                        <div>
+                            <p class="font-mono text-[11px] text-texto-suave">GEX611 · 4 créditos</p>
+                            <h2 class="mt-0.5 text-base font-bold text-texto">Organização de Computadores</h2>
+                        </div>
+                        <span class="shrink-0 rounded-full bg-uffs px-3 py-1 font-mono text-[10px] font-medium tracking-wider text-white uppercase">Tranca 1</span>
+                    </div>
+                    <div class="mt-3 space-y-1 border-t border-linha pt-2.5 text-xs text-texto-suave">
+                        <p>→ Sistemas Operacionais (4ª fase)</p>
+                    </div>
+                </a>
+
+                <a href="disciplina.html" class="block rounded-lg border border-linha bg-white p-4 hover:border-uffs">
+                    <div class="flex items-start justify-between gap-3">
+                        <div>
+                            <p class="font-mono text-[11px] text-texto-suave">GEX212 · 4 créditos</p>
+                            <h2 class="mt-0.5 text-base font-bold text-texto">Matemática Discreta</h2>
+                        </div>
+                        <span class="shrink-0 rounded-full border border-linha px-3 py-1 font-mono text-[10px] font-medium tracking-wider text-texto-suave uppercase">Livre</span>
+                    </div>
+                    <p class="mt-3 border-t border-linha pt-2.5 text-xs text-texto-suave">Base para Grafos e Teoria da Computação.</p>
+                </a>
+            </section>
+
+            <section id="fase-4" class="aba-conteudo hidden grid-cols-1 gap-3.5 md:grid-cols-2">
+                <a href="disciplina.html" class="block rounded-lg border border-linha bg-white p-4 hover:border-uffs">
+                    <div class="flex items-start justify-between gap-3">
+                        <div>
+                            <p class="font-mono text-[11px] text-texto-suave">GEX612 · 4 créditos</p>
+                            <h2 class="mt-0.5 text-base font-bold text-texto">Sistemas Operacionais</h2>
+                        </div>
+                        <span class="shrink-0 rounded-full bg-uffs px-3 py-1 font-mono text-[10px] font-medium tracking-wider text-white uppercase">Tranca 1</span>
+                    </div>
+                    <div class="mt-3 space-y-1 border-t border-linha pt-2.5 text-xs text-texto-suave">
+                        <p>→ Redes de Computadores (5ª fase)</p>
+                    </div>
+                </a>
+
+                <a href="disciplina.html" class="block rounded-lg border border-linha bg-white p-4 hover:border-uffs">
+                    <div class="flex items-start justify-between gap-3">
+                        <div>
+                            <p class="font-mono text-[11px] text-texto-suave">GEX613 · 4 créditos</p>
+                            <h2 class="mt-0.5 text-base font-bold text-texto">Banco de Dados I</h2>
+                        </div>
+                        <span class="shrink-0 rounded-full bg-uffs px-3 py-1 font-mono text-[10px] font-medium tracking-wider text-white uppercase">Tranca 1</span>
+                    </div>
+                    <div class="mt-3 space-y-1 border-t border-linha pt-2.5 text-xs text-texto-suave">
+                        <p>→ Banco de Dados II (5ª fase)</p>
+                    </div>
+                </a>
+
+                <a href="disciplina.html" class="block rounded-lg border border-linha bg-white p-4 hover:border-uffs">
+                    <div class="flex items-start justify-between gap-3">
+                        <div>
+                            <p class="font-mono text-[11px] text-texto-suave">GEX614 · 4 créditos</p>
+                            <h2 class="mt-0.5 text-base font-bold text-texto">Engenharia de Software I</h2>
+                        </div>
+                        <span class="shrink-0 rounded-full border border-linha px-3 py-1 font-mono text-[10px] font-medium tracking-wider text-texto-suave uppercase">Livre</span>
+                    </div>
+                    <p class="mt-3 border-t border-linha pt-2.5 text-xs text-texto-suave">Requisito: Programação I (2ª fase).</p>
+                </a>
+
+                <a href="disciplina.html" class="block rounded-lg border border-linha bg-white p-4 hover:border-uffs">
+                    <div class="flex items-start justify-between gap-3">
+                        <div>
+                            <p class="font-mono text-[11px] text-texto-suave">GEX615 · 4 créditos</p>
+                            <h2 class="mt-0.5 text-base font-bold text-texto">Grafos</h2>
+                        </div>
+                        <span class="shrink-0 rounded-full border border-linha px-3 py-1 font-mono text-[10px] font-medium tracking-wider text-texto-suave uppercase">Livre</span>
+                    </div>
+                    <p class="mt-3 border-t border-linha pt-2.5 text-xs text-texto-suave">Requisito: Estruturas de Dados I (2ª fase).</p>
+                </a>
+            </section>
+
+            <section class="rounded-lg bg-uffs p-5 text-white">
+                <p class="font-mono text-[11px] tracking-wider text-uffs-suave uppercase">Macete regimental · pré-requisitos</p>
+                <p class="mt-2 text-sm leading-relaxed">Com média final 4,0 e frequência mínima de 75%, você não reprova direto e pode destravar matérias dependentes conforme as regras de progressão. Abaixo de 4,0, as disciplinas vinculadas ficam trancadas no próximo semestre.</p>
+                <div class="mt-4 flex overflow-hidden rounded font-mono text-[11px] font-medium">
+                    <div class="w-[40%] bg-[#C84231] px-2.5 py-1.5 text-white">0–3,9 tranca</div>
+                    <div class="w-[20%] bg-[#D9822B] px-2.5 py-1.5 text-white">4–5,9 exame</div>
+                    <div class="w-[40%] bg-white px-2.5 py-1.5 text-uffs">6,0+ aprovado</div>
+                </div>
+            </section>
+        </div>
     </main>
 
     <footer class="fixed inset-x-0 bottom-0 grid h-18 grid-cols-5 items-center border-t border-linha bg-white text-center text-xs font-medium text-texto-suave">
@@ -23,5 +298,22 @@
         <a href="agenda.html">Agenda</a>
         <a href="campus.html">Campus</a>
     </footer>
+
+    <script>
+        function mostrarAba(id, botao) {
+            document.querySelectorAll('.aba-conteudo').forEach(sec => {
+                sec.classList.add('hidden');
+                sec.classList.remove('grid');
+            });
+            const ativa = document.getElementById(id);
+            ativa.classList.remove('hidden');
+            ativa.classList.add('grid');
+
+            document.querySelectorAll('.aba-btn').forEach(btn => {
+                btn.className = 'aba-btn cursor-pointer rounded-full border border-uffs-borda px-4 py-1.5 text-xs font-medium text-uffs-suave';
+            });
+            botao.className = 'aba-btn cursor-pointer rounded-full bg-white px-4 py-1.5 text-xs font-bold text-uffs';
+        }
+    </script>
 </body>
 </html>
